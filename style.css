@@ -4,11 +4,16 @@ html{
     padding:0;
     position:relative;
     height:100%;
+    width:100%;
+    box-sizing: border-box;
 }
 
 body{
     height:100%; /*this is needed to keep sidebar at full screen length*/
+    width:100%;
+    box-sizing: border-box;
 }
+
 
 .bodyHome{
     margin:4rem;
