@@ -1,0 +1,825 @@
+html{
+    font-family: Linux Libertine,Hoefler Text,Georgia,Times New Roman,Times,serif; 
+    margin:0;
+    padding:0;
+    position:relative;
+    height:100%;
+}
+
+body{
+    height:100%; /*this is needed to keep sidebar at full screen length*/
+}
+
+.bodyHome{
+    margin:4rem;
+    text-align: center;
+    
+}
+
+.title h1{
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.sloganHomePage{
+    font-size: 1rem;
+    font-weight: lighter;
+    margin:0;
+    padding:0;
+}
+
+.wikipediaIconHomepage1{/* rule for positioning central logo on homagepage, larger screens*/
+    margin-top: 3.5rem;
+    width:10rem;
+}
+
+.wikipediaIconHomepage2{/* rule for positioning central logo on homagepage, smaller screens*/
+    display: none;
+}
+
+.responsiveTitle{/*title use in header for smaller screens, see 780px media break*/
+    display:none;
+}
+
+/*rules for language elements*/
+.centralWrapper{
+    width:33rem;
+    height:23rem; /*fixed height & width*/
+    margin: 0 auto;
+    position:relative;
+}
+
+.languageText{ /*names of language*/
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    color:#3366CC;
+    margin:1rem 0 .5rem 0;
+    padding:0;
+}
+
+.articleText{/*number of language*/
+    color:#54595D;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+    font-size: .8rem;
+    font-weight: 400;
+    margin:0;
+    padding:0;
+}
+
+.language1{
+    display:inline-block;
+    position: absolute;
+    top:0;
+    left:5rem;
+}
+
+.language2{
+    display:inline-block;
+    position: absolute;
+    top:0;
+    right:5rem;
+}
+
+.language3{
+    display:inline-block;
+    position: absolute;
+    top:4rem;
+    left:3rem;
+}
+
+.language4{
+    display:inline-block;
+    position: absolute;
+    top:4rem;
+    right:3rem;
+}
+.language5{
+    display:inline-block;
+    position: absolute;
+    top:8rem;
+    left:1rem;
+}
+
+.language6{
+    display:inline-block;
+    position: absolute;
+    top:8rem;
+    right:1rem;
+}
+
+.language7{
+    display:inline-block;
+    position: absolute;
+    top:12rem;
+    left:3rem;
+}
+
+.language8{
+    display:inline-block;
+    position: absolute;
+    top:12rem;
+    right:3rem;
+}
+.language9{
+    display:inline-block;
+    position: absolute;
+    top:16rem;
+    left:5rem;
+}
+
+.language10{
+    display:inline-block;
+    position: absolute;
+    top:16rem;
+    right:5rem;
+}
+
+
+/*homepage input box *************/
+.inputBoxWrapper1{
+    display:none;
+}
+
+.firstLetterTitle{
+    font-size: 1.7rem;
+}
+
+.inputBoxCSS{ /***** homepage  ***/
+    line-height: 2.5rem;
+    border: solid 1px #C0C0C0;
+    padding-left: .7rem;
+    color:black;
+    font-size: .8rem;
+    width: 32%;
+    min-width: 20rem;
+}
+
+.inputBoxCSS:hover{ /***** homepage  ***/
+    border-top: solid 2px #3366cc;
+    border-bottom: solid 2px #3366cc;
+    border-left: solid 2px #3366cc;
+}
+
+.mainButton{  /***** homepage  ***/
+    display:inline-block;
+    height:2.7rem;
+    width:3.3rem;
+    vertical-align: bottom;
+    position:relative;
+    left: -4px;
+}
+
+.mainButton img{    /***** homepage  ***/
+  width:100%;
+  height:100%;
+}
+
+
+/************************  multiple results page/page two ********/ 
+/*search bar */ 
+.headerCorner{
+    position: absolute;
+    left:0;
+    top:1.7rem;
+    width:10rem;
+    height:3.25rem;
+    background-color:#f6f6f6; /* For browsers that do not support gradients */
+    background-image: linear-gradient(white,#f6f6f6);
+}
+
+
+.iconContainer{
+    text-align:center;
+}
+
+.small_icon{
+    width:5em;
+    
+}
+.iconFirstLetter{
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+.iconTitle{
+    margin:0;
+    font-size: .7rem;
+    font-weight: normal;
+}
+
+.iconDescription{
+    font-size: .6rem;
+    margin:0;
+}
+
+.sidebar{
+    position: absolute;
+    left:0;
+    top:4.7rem;
+    width:10rem;
+    height:100%;
+    background-color:#f6f6f6;
+    border-right: .3px solid#83cdf7;
+    z-index:-2;
+}
+
+.header{
+    position: absolute;
+    left:10rem;
+    top: 1.7rem;
+    width: calc(100% - 10rem);
+    height:3.25rem;
+    border-bottom: .3px solid#83cdf7;
+    z-index: -1;
+    background-color:#f6f6f6; /* For browsers that do not support gradients */
+    background-image: linear-gradient(white,#f6f6f6);
+}
+
+.articleBox1{
+    position:absolute;
+    left:10rem;
+    top:1.8rem;
+    background-color:white;
+    width:3.2rem;
+    height:1rem;
+}
+
+.articleBox2{
+    position:absolute;
+    left:10rem;
+    top:2.8rem;
+    border-bottom: .3px solid white;
+    background-color: white;
+    width:3.2rem;
+    height:2rem;
+    border-right-width: .3px;
+    border-left-width: .3px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to top, 
+      #83cdf7, 
+       white
+    ) 1 100%;
+}
+
+
+.articleBox4{
+    position:absolute;
+    left:13.3rem;
+    top:2.6rem;
+    background: rgb(131, 205, 247, .1); /*#83cdf7;*/
+    width:2.5rem;
+    height:2.1rem;
+    border-left-width: 0;
+    border-right-width: .3px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to top, 
+      #83cdf7, 
+       white
+    ) 1 100%;
+    color:blue;
+}
+
+.articleBox5{
+    position:absolute;
+    right:23rem;
+    top:1.8rem;
+    background-color:white;
+    width:3.2rem;
+    height:1rem;
+}
+
+.articleBox6{
+    position:absolute;
+    right:23rem;
+    top:2.8rem;
+    border-bottom: .3px solid white;
+    background-color: white;
+    width:3.2rem;
+    height:2rem;
+    border-right-width: .3px;
+    border-left-width: .3px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to top, 
+      #83cdf7, 
+       white
+    ) 1 100%;
+}
+
+.articleBox8{
+    position:absolute;
+    right:20.5rem;
+    top:2.6rem;
+    background: rgb(131, 205, 247, .1); /*#83cdf7;*/
+    width:2.5rem;
+    height:2.1rem;
+    border-left-width: 0;
+    border-right-width: .3px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to top, 
+      #83cdf7, 
+       white
+    ) 1 100%;
+    color:blue;
+}
+
+.articleBox10{
+    position:absolute;
+    right:15rem;
+    top:2.6rem;
+    background: rgb(131, 205, 247, .1); /*#83cdf7;*/
+    width:5.5rem;
+    height:2.1rem;
+    border-left-width: 0;
+    border-right-width: .3px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to top, 
+      #83cdf7, 
+       white
+    ) 1 100%;
+    color:blue;
+}
+
+
+.articleBoxText{
+    font-size: 0.8125em;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: .5rem;
+    left: .5rem;
+}
+
+.inputBoxResultsPage{ /*at final.html*/
+    line-height: 1.7rem;
+    border: solid 1px #C0C0C0;
+    padding-left: .7rem;
+    font-size: .8rem;
+    width: 20%;
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+
+}
+
+/***  results display *****/
+.titleAtTopWrapper{
+    padding-left:12rem;
+    padding-right:1rem;
+}
+
+.titleAtTop{
+    margin-top: 6.5rem;
+    margin-bottom: 0;
+    font-size: 1.8em;
+    font-weight: lighter;
+    line-height: 2rem;
+    border-bottom: solid 1px grey;
+    text-align: left;
+}
+
+.titleAtTopWrapper h5{
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: left;
+    margin-top:.5rem;
+    margin-bottom: 3rem;
+}
+
+
+
+/* final results********************+************/
+
+.resultsWrapper{
+    padding-left:10.1rem;
+    padding-right:25rem;
+    line-height: 1.6rem;
+}    
+
+.resultsDisplay{
+    font-family:'BlinkMacSystemFont','Segoe UI','Roboto','Lato','Helvetica','Arial',sans-serif;
+    text-align: left;
+    margin-top: .5rem;
+    font-size: .9rem;
+    list-style-type:none;
+    white-space: pre-line;
+    width: 40rem;
+}
+
+.hamburger_bars_wrapper, .hamburger_Navigation, .magnifierIcon, .responsiveSearchScreen{ /* hamburger icon turned off*/
+    display: none;
+}
+
+
+@media only screen and (max-width : 1080px) {
+    .resultsWrapper{
+        padding-right:0;  
+    }
+
+    .resultsDisplay{
+        width: 80%;
+    }    
+
+    .inputBoxResultsPage{ /*at final.html*/
+        width: 30%;
+    }
+}
+
+
+@media only screen and (max-width : 875px) {
+    .headerTabs{
+        display:none;
+    }
+
+    .inputBoxResultsPage{ /*at final.html*/
+        width: 50%;
+        right: 1rem;
+        top: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width : 780px) {
+    .bodyHome{
+        width:100%;
+        margin: 4rem auto;
+    }
+
+    .centralWrapper{
+        width:90%;
+    }
+
+    .headerCorner, .sidebar{ /* header and sidebar turned off on searchResults and final page*/
+        display:none;
+    }
+
+    .titleAtTopWrapper{
+        padding:0;
+        margin:0 3rem; 
+    }
+
+    .resultsWrapper{
+        padding:0;
+        margin:0 3rem;  
+    }
+
+    .resultsDisplay{
+        padding:0;
+        margin:0;
+        width: 100%;
+    }    
+
+    ul{
+        padding:0;
+        margin:0;
+    }
+
+    .header{
+        left:0;
+        top: 0;
+        width:100%;
+        height:3.5rem;
+        z-index: -1;
+        background-image:none;
+        background-color: #eaecf0; 
+        border-bottom: none;
+    }
+    .header{
+        display:flex;
+    }
+
+    .responsiveTitle{
+        display:inline-block;
+        font-weight: 500;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        color:#696764;
+    }
+  
+    .inputBoxResultsPage{
+        line-height: 2.1rem;
+        width: 50%;
+        border-style: none;
+        top: .7rem;
+    }
+
+    .hamburger_bars_wrapper { /* hamburger icon turned off*/
+        display: inline-block;
+        margin: 1.2rem 0 0 1rem;
+    }
+
+    .hamburger_bars { /* hamburger icon turned off*/
+        display: block;
+        width:1.2rem;
+        height: .15rem;
+        background-color: #696764;
+        margin: .2rem 0;
+        border-radius: 25px;
+    }
+
+    .hamburger_Navigation{
+        width:100%;
+        height:100%;
+        z-index:1;
+        background-color: rgba(0,0,0,0.3);
+        position: absolute;
+        left:0;
+        top:0;
+    }
+
+    .hamburger_NavigationMenu{
+        width:12rem;
+        height:100%;
+        background-color: #eaecf0;
+        position: absolute;
+        left:0;
+        top:0;
+    
+    }
+    .HamburgerMenuItem{
+        display:flex;
+        background:white;
+        height: 3rem;
+        border-bottom: 1.7px solid #eaecf0;
+    }
+
+    .hello{
+        display:inline-block;
+        font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Lato','Helvetica','Arial',sans-serif;
+        list-style-type: none;
+        background-color: white;
+        font-size: 1rem;
+        line-height: 3rem;
+        position: absolute;
+        top:0;
+        font-weight: bold;
+        padding:0;
+        margin:0;
+    }
+
+    .random{
+        display:inline-block;
+        font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Lato','Helvetica','Arial',sans-serif;
+        list-style-type: none;
+        background-color: white;
+        font-size: 1rem;
+        line-height: 2.8rem;
+        position: absolute;
+        top:3rem;
+        font-weight: bold;
+        margin:.3rem 0 .3rem 0;
+    }
+
+    .nearby{
+        display:inline-block;
+        font-family: -apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Lato','Helvetica','Arial',sans-serif;
+        list-style-type: none;
+        background-color: white;
+        font-size: 1rem;
+        line-height: 2.8rem;
+        position: absolute;
+        top:6rem;
+        font-weight: bold;
+        margin:.3rem 0 .3rem 0;
+    }
+
+
+
+    .homeIcon{
+        display:inline;
+        background-color: white;
+        padding: .7rem .5rem 0 2rem; 
+    }
+
+    .hamburger_Navigation a{
+        text-decoration:none;
+        
+    }
+
+
+
+}
+
+@media only screen and (max-width : 650px) {
+    .title{
+        width: 95%; 
+        height:auto;
+        margin: 0 auto;
+    }
+
+    .title h1{
+        font-size: 1rem;
+        margin:0;
+        position:relative;
+        left:1.1rem;
+    }
+    
+    .sloganHomePage{
+        font-size: .9rem;
+        position:relative;
+        left:1.1rem;
+    }
+
+    .wikipediaIconHomepage1{/* rule for positioning central logo on homagepage*/
+        display: none;
+    }
+    
+    .wikipediaIconHomepage2{/* rule for positioning central logo on homagepage*/
+        display: inline-block;
+        position:relative;
+        width:3rem;
+        height:auto;
+        top:3.3rem;
+        right:7rem;
+    }
+
+    .inputBoxWrapper1{
+        display:block;
+        margin: 1.5rem 0 2rem 0;
+    }
+
+    .inputBoxWrapper2{
+        display:none;
+    }
+
+    .inputBoxCSS{ /***** at homepage  ***/
+        width: 75%;
+        min-width:5rem;
+    }
+
+    .centralWrapper{
+        width: 85%;
+    }
+
+    .languageText{ 
+        margin:0;
+    }
+
+    .articleBreak::before{
+        content: "\a";
+        white-space: pre;
+    }
+
+    .language1{
+        left:0;
+        width:33%;  
+    }
+
+    .language2{
+        left:34%;
+        width:33%; 
+    }
+    
+    .language3{
+        top:0;
+        left:68%;
+        width:33%;  
+    }
+    
+    .language4{
+        top:4rem;
+        left:0;
+        width:33%;
+    }
+
+    .language5{
+        top:4rem;
+        left:34%;
+        width:33%;
+    }
+    
+    .language6{
+        top:4rem;
+        left:68%;
+        width:33%; 
+    }
+    
+    .language7{
+        top:8rem;
+        left:0;
+        width:33%;
+    }
+    
+    .language8{
+        top:8rem;
+        left:34%;
+        width:33%;
+    }
+
+    .language9{
+        top:8rem;
+        left:68%;
+        width:33%;;
+    }
+    
+    .language10{
+        top:12rem;
+        left:0;
+        width:33%;
+    }
+
+}
+
+@media only screen and (max-width : 610px) {
+    .inputBoxResultsPage{
+        width:45%;
+    }
+}
+
+@media only screen and (max-width : 550px) {
+    .inputBoxResultsPage{
+        display:none;
+    }
+
+    .responsiveSearchScreen{ 
+        position: absolute;
+        top:0;
+        right:0;     
+        background:rgb(255, 255, 255);
+        width:100%;
+        height:100%;
+        z-index: 0;
+    }
+
+    .magnifierIcon{
+        display:inline-block;
+        width:1.2rem;
+        position:absolute;
+        right:1.1rem;
+        top: 1.2rem;
+    }
+
+    .xmarkIcon{
+        width:1.2rem;
+        position:absolute;
+        right:1.1rem;
+        top: 1.2rem;
+        z-index: 2;
+        background-color:#eaecf0;
+    }
+
+    .responsiveSearchHeader {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 3.5rem;
+        z-index: -1;
+        background-image: none;
+        background-color: #eaecf0;
+        border-bottom: none;
+    }
+    
+    .responsiveSearchInput{
+        padding-left:1rem;
+        height:1.5rem;
+        width:75%;
+        margin-left:1rem;
+        margin-top:1rem;
+        border: 2.5px solid blue;
+    }
+
+}
+
+@media only screen and (max-width : 480px) {
+    .wikipediaIconHomepage2{
+        right:6.5rem;
+    }
+
+    .titleAtTopWrapper{
+        margin-left:1.5rem;
+        margin-right:1.5rem;
+    }
+
+    .resultsWrapper{
+        margin-left:1.5rem;
+        margin-right:1.5rem;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    .inputBoxCSS{ 
+        width: 70%;
+    }
+
+    .responsiveSearchInput{
+        width:70%;
+        margin-left:.7rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Wiki-Stunt Double</title>
+    </head>
+
+
+    <body onlick="turnOffOnlyHamburger(offhamburger)">
+        <!--responsive search screen-->
+        <div class="responsiveSearchScreen" id="magnifierIconWrapperID"><!--responsive search screen-->
+            <div class="responsiveSearchHeader">
+                <div>
+                    <form>
+                        <input class="responsiveSearchInput" type="text" placeholder="Search Wiki-Stunt Double" id="userInputPageTwoResponsiveSearch">
+                    </form>
+                </div>
+                <div class="magnifierIconWrapper">
+                    <img src="images/xmark_32px.png" alt="xmark icon" class="xmarkIcon" id="xmarkIconID" onclick="closeSearch()">
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="topHeader"></div>
+            <div class="headerCorner">
+                    <div class="iconContainer">
+                        <a href="index.html"><img src="images/small_icon.png" alt="Wikipedia icon" class="small_icon"></a>
+                        <h5 class="iconTitle"><span class="iconFirstLetter">W</span>IKI-STUNT DOUBL<span class="iconFirstLetter">E</span></5>
+                        <p class="iconDescription">Part Wikipedia, Part Stunt</p>
+                    </div>
+            </div>
+        
+
+            <div class="headerTabs">
+                <div class="leftHeaderTabs">
+                    <div class="articleBox1"></div>
+                    <div class="articleBox2">
+                        <div class="articleBoxText">Article</div>
+                    </div>
+                    <div class="articleBox4">
+                        <div class="articleBoxText">Talk</div>
+                    </div>
+                </div>
+                <div class="rightHeaderTabs">
+                    <div class="articleBox5"></div>
+                    <div class="articleBox6">
+                        <div class="articleBoxText">Read</div>
+                    </div>
+                    <div class="articleBox8">
+                        <div class="articleBoxText">Edit</div>
+                    </div>
+                    <div class="articleBox10">
+                        <div class="articleBoxText">View History</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header">
+                <div class="hamburger_bars_wrapper"><!--hamburger icon-->
+                    <div class="hamburger_bars_hover" onclick="turnOnOffHamburger()" id="hamburger_onClick"> <!--on click command-->
+                        <div class="hamburger_bars"></div>
+                        <div class="hamburger_bars"></div> 
+                        <div class="hamburger_bars"></div> 
+                    </div>
+                </div>
+
+                <h5 class="responsiveTitle"><span class="iconFirstLetter">W</span>IKI-STUNT DOUBL<span class="iconFirstLetter">E</span><h5>
+                <div class="inputBox2">
+                    <form>
+                        <input class="inputBoxResultsPage" type="text" placeholder="Search Wiki-Stunt Double" id="userInputPageTwo">  
+                    </form>
+                </div>
+                
+                <!-- magnifier icon to spring open responsive search input box-->
+                <div class="magnifierIconWrapper">
+                    <img src="images/magnifier_32.png" alt="search icon" class="magnifierIcon" onclick="expandSearch()">
+                </div>
+                
+            </div>
+            <div class="sidebar"></div>
+        </header>
+
+    <!--hamburger menu-->
+        <div class="hamburger_Navigation" id="hamburgerNavigation"> <!--id for javascript function-->
+            <div class="hamburger_NavigationMenu" id="hamburgerNavigationMenu">
+                <div class="HamburgerMenuItem">
+                    <ul>
+                        <a href="index.html"><img src="images/homeIcon_32px.png" alt="homepage icon" class="homeIcon"></a>
+                        <li class="hello"><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+                <div class="HamburgerMenuItem">
+                    <ul>
+                        <a href=""><img src="images/random_32px.png" alt="homepage icon" class="homeIcon"></a>
+                        <li class="random"><a href="">Random</a></li>
+                    </ul>
+                </div>
+                <div class="HamburgerMenuItem">
+                    <ul>
+                        <a href=""><img src="images/location_32px.png" alt="homepage icon" class="homeIcon"></a>
+                        <li class="nearby"><a href="">Nearby</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="titleAtTopWrapper">
+            <h1 class="titleAtTop" id="inputDisplay">User Input Here</h1>
+            <h5>From Wiki-Stunt Double: part Wikipedia, part Stunt</h5>
+        </div>
+        <div class="resultsWrapper">
+            <ul>                            
+                <li class="resultsDisplay" id="resultDisplay1" onclick="finalResult1()">Result Topic Here</li> 
+                <li class="resultsDisplay" id="resultDisplay2" onclick="finalResult2()">Result Topic Here</li> 
+                <li class="resultsDisplay" id="resultDisplay3" onclick="finalResult3()">Result Topic Here</li> 
+                <li class="resultsDisplay" id="resultDisplay4" onclick="finalResult4()">Result Topic Here</li> 
+                <li class="resultsDisplay" id="resultDisplay5" onclick="finalResult5()">Result Topic Here</li> 
+                <li class="resultsDisplay" id="resultDisplay6" onclick="finalResult6()">Result Topic Here</li> 
+                <li class="resultsDisplay" id="resultDisplay7" onclick="finalResult7()">Result Topic Here</li> 
+                <li class="resultsDisplay" id="resultDisplay8" onclick="finalResult8()">Result Topic Here</li> 
+                <li class="resultsDisplay" id="resultDisplay9" onclick="finalResult9()">Result Topic Here</li> 
+                <li class="resultsDisplay"><a href="https://en.wikipedia.org/wiki/The_Fall_Guy">Theme Song to the Fall Guy</a></li> 
+                
+            </ul>
+        </div>
+        <footer>
+            <script src="searchResults.js"></script>
+        </footer>
+    </body>
+
+</html>
